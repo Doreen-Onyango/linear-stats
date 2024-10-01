@@ -28,3 +28,12 @@ func ReadData(path string) ([]float64, error) {
 	}
 	return data, nil
 }
+
+func IndexData(data []float64, value float64) int {
+	for _, char := range data {
+		if char == value {
+			return 1
+		}
+	}
+	return -1
+}
