@@ -36,3 +36,31 @@ The program expects a data file containing numerical values, one value per line.
 4.5
 5.0
 ```
+
+## How It Works
+
+1. **Argument Parsing**: 
+
+    The program checks for command-line arguments to get the path of the data file.
+
+2. **Data Reading**: 
+
+   It uses a function from the linears/handleData package to read data from the specified file.
+
+3. **Calculations**:
+
+   - It calculates sums of x-values, y-values, x-squared values, and xy products.
+   - Computes slope and intercept for the linear regression line using least squares method.
+   - Calculates means for x and y values.
+   - Computes Pearson correlation coefficient to assess linear relationship strength.
+
+4. **Output**: 
+
+   Finally, it prints out the linear regression equation and Pearson correlation coefficient.
+
+## Contribution
+This project is open for contibution,  create a pull request if need arises.
+
+## Author
+This project is maintained by:
+[Doreen Onyango](https://github.com/Doreen-Onyango)
