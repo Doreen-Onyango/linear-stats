@@ -5,6 +5,7 @@ import (
 	"log"
 	"math"
 	"os"
+	"strings"
 
 	linears "linears/handleData"
 )
@@ -15,6 +16,10 @@ func main() {
 	}
 
 	path := os.Args[1]
+	if !strings.HasSuffix(path, ".txt") {
+		log.Fatal("Provide a file with .txt extension")
+		return
+	}
 	data, err := linears.ReadData(path)
 	if err != nil {
 		log.Fatalf("Error reading data: %v", err)
