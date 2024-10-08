@@ -25,7 +25,7 @@ cd linear-stats
 To run the program, use the following command in your terminal:
 
 ```bash
-go run main.go input.txt
+go run main.go data.txt
 ```
 ## Data Format
 The program expects a data file containing numerical values, one value per line. For example:
@@ -53,6 +53,19 @@ The program expects a data file containing numerical values, one value per line.
    - Computes slope and intercept for the linear regression line using least squares method.
    - Calculates means for x and y values.
    - Computes Pearson correlation coefficient to assess linear relationship strength.
+
+   For example:
+
+   ```js
+   // Linear Regression 
+   slope = (n*xySum - xSum*ySum) / (n*xSquaredSum - xSum*xSum)
+	intercept = (ySum - slope*xSum) / n
+   ```
+
+   ```js
+   // Pearson Correlation Coefficient
+   correlation =  numerator / math.Sqrt(xDenominator*yDenominator)
+   ```
 
 4. **Output**: 
 
