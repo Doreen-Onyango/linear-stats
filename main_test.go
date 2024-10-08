@@ -1,25 +1,3 @@
-// package main
-
-// import "testing"
-
-// func Test_main(t *testing.T) {
-// 	tests := []struct {
-// 		name string
-// 	}{
-// 		{
-// 			name:     "Valid data file",
-// 			path:     "data.txt",
-// 			expected: "Linear Regression Line: y = ",
-// 		},
-// 		// TODO: Add test cases.
-// 	}
-// 	for _, tt := range tests {
-// 		t.Run(tt.name, func(t *testing.T) {
-// 			main()
-// 		})
-// 	}
-// }
-
 package main
 
 import (
@@ -36,7 +14,7 @@ func Test_main(t *testing.T) {
 	}{
 		{
 			name:     "Valid data file",
-			filePath: "data.txt",
+			filePath: "tests.txt",
 			expected: "Linear Regression Line: y = ",
 		},
 		{
