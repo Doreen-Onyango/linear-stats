@@ -49,23 +49,23 @@ func main() {
 	var numerator float64
 	var xMean float64
 	var yMean float64
-	for _, y := range data {
-		x := float64(linears.IndexData(data, y))
+	for i, y := range data {
+		x := float64(i)
 		xMean += x
 		yMean += y
 	}
 	xMean /= n
 	yMean /= n
 
-	for _, y := range data {
-		x := float64(linears.IndexData(data, y))
+	for i, y := range data {
+		x := float64(i)
 		numerator += (x - xMean) * (y - yMean)
 	}
 
 	var xDenominator float64
 	var yDenominator float64
-	for _, y := range data {
-		x := float64(linears.IndexData(data, y))
+	for i, y := range data {
+		x := float64(i)
 		xDenominator += (x - xMean) * (x - xMean)
 		yDenominator += (y - yMean) * (y - yMean)
 	}
